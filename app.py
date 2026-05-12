@@ -20,10 +20,6 @@ def login():
 
 @app.route('/reports', methods=['GET', 'POST'])
 def reports():
-    if request.method == 'POST':
-        location = request.form['location']
-        issue = request.form['issue']
-        return "Report submitted successfully"
     return render_template('reports.html')
 
 @app.route('/recycling')
@@ -34,5 +30,6 @@ def recycling():
 def contact():
     return render_template('contact.html')
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True)
+    
