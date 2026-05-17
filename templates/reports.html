@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <main class="form-container">
+        <h1>Submit Report</h1>
+        
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="e.g., Kawempe, Kampala" required>
+            </div>
+
+            <div class="form-group">
+                <label for="issue">Describe Issue</label>
+                <textarea id="issue" name="issue" rows="5" placeholder="Provide details about the issue..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Report</button>
+        </form>
+    </main>
+
+</body>
+</html>
